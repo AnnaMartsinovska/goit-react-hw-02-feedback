@@ -1,14 +1,14 @@
 import { StyledButton } from './Response.styled';
 import propTypes from 'prop-types';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
     <div>
-      <StyledButton onClick={() => onLeaveFeedback(options)}>Good</StyledButton>
-      <StyledButton onClick={() => onLeaveFeedback(options)}>
+      <StyledButton onClick={() => onLeaveFeedback('good')}>Good</StyledButton>
+      <StyledButton onClick={() => onLeaveFeedback('neutral')}>
         Neutral
       </StyledButton>
-      <StyledButton onClick={() => onLeaveFeedback(options)}>Bad</StyledButton>
+      <StyledButton onClick={() => onLeaveFeedback('bad')}>Bad</StyledButton>
     </div>
   );
 };

@@ -12,10 +12,10 @@ class Response extends React.Component {
     bad: 0,
   };
 
-  handleFeedback = () => {
-    this.setState(prev => ({ good: prev.good + 1 }));
-    this.setState(prev => ({ neutral: prev.neutral + 1 }));
-    this.setState(prev => ({ bad: prev.bad + 1 }));
+  handleFeedback = key => {
+    this.setState(prev => ({
+      [key]: prev[key] + 1,
+    }));
   };
 
   countTotalFeedback = () => {
