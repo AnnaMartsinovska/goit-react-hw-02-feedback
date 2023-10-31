@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledHeader = styled.h1`
   font-weight: 400;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const StyledButton = styled.button`
@@ -10,11 +12,7 @@ export const StyledButton = styled.button`
   border-color: lightblue;
   margin-left: 8px;
   margin-bottom: 20px;
-`;
-
-export const StyledTitle = styled.h2`
-  font-weight: 400;
-  margin-bottom: 20px;
+  cursor: pointer;
 `;
 
 export const StyledList = styled.ul`
@@ -27,4 +25,8 @@ export const StyledList = styled.ul`
 export const StyledWrap = styled.div`
   margin-left: 50px;
   margin-top: 50px;
+`;
+
+export const StyledNotification = styled.p`
+  font-style: italic;
 `;
